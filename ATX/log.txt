@@ -1,0 +1,428 @@
+--------- beginning of system
+E/PackageManager( 2827): updateAllSharedLibrariesLPw failed: Package com.intel.cws.cwsservicemanager requires unavailable shared library com.intel.internal.telephony.MmgrClient; failing!
+F/SystemServer( 2827): BOOT FAILURE starting Cws Service Manager
+F/SystemServer( 2827): java.lang.SecurityException
+F/SystemServer( 2827): 	at android.os.BinderProxy.transactNative(Native Method)
+F/SystemServer( 2827): 	at android.os.BinderProxy.transact(Binder.java:496)
+F/SystemServer( 2827): 	at android.os.ServiceManagerProxy.addService(ServiceManagerNative.java:150)
+F/SystemServer( 2827): 	at android.os.ServiceManager.addService(ServiceManager.java:72)
+F/SystemServer( 2827): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:540)
+F/SystemServer( 2827): 	at com.android.server.SystemServer.run(SystemServer.java:274)
+F/SystemServer( 2827): 	at com.android.server.SystemServer.main(SystemServer.java:186)
+F/SystemServer( 2827): 	at java.lang.reflect.Method.invoke(Native Method)
+F/SystemServer( 2827): 	at java.lang.reflect.Method.invoke(Method.java:372)
+F/SystemServer( 2827): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+F/SystemServer( 2827): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:707)
+E/MountService( 2827): Error processing initial volume state
+E/MountService( 2827): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.storage.StorageVolume.getPath()' on a null object reference
+E/MountService( 2827): 	at com.android.server.MountService.updatePublicVolumeState(MountService.java:746)
+E/MountService( 2827): 	at com.android.server.MountService.access$1700(MountService.java:119)
+E/MountService( 2827): 	at com.android.server.MountService$3.run(MountService.java:840)
+E/PersistentDataBlockService( 2827): not able to find package com.google.android.gms
+E/PersistentDataBlockService( 2827): android.content.pm.PackageManager$NameNotFoundException: com.google.android.gms
+E/PersistentDataBlockService( 2827): 	at android.app.ApplicationPackageManager.getPackageUid(ApplicationPackageManager.java:208)
+E/PersistentDataBlockService( 2827): 	at com.android.server.PersistentDataBlockService.getAllowedUid(PersistentDataBlockService.java:98)
+E/PersistentDataBlockService( 2827): 	at com.android.server.PersistentDataBlockService.<init>(PersistentDataBlockService.java:89)
+E/PersistentDataBlockService( 2827): 	at java.lang.reflect.Constructor.newInstance(Native Method)
+E/PersistentDataBlockService( 2827): 	at java.lang.reflect.Constructor.newInstance(Constructor.java:288)
+E/PersistentDataBlockService( 2827): 	at com.android.server.SystemServiceManager.startService(SystemServiceManager.java:89)
+E/PersistentDataBlockService( 2827): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:634)
+E/PersistentDataBlockService( 2827): 	at com.android.server.SystemServer.run(SystemServer.java:274)
+E/PersistentDataBlockService( 2827): 	at com.android.server.SystemServer.main(SystemServer.java:186)
+E/PersistentDataBlockService( 2827): 	at java.lang.reflect.Method.invoke(Native Method)
+E/PersistentDataBlockService( 2827): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/PersistentDataBlockService( 2827): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+E/PersistentDataBlockService( 2827): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:707)
+E/ConnectivityService( 2827): Ignoring protectedNetwork 10
+E/ConnectivityService( 2827): Ignoring protectedNetwork 11
+E/ConnectivityService( 2827): Ignoring protectedNetwork 12
+E/ConnectivityService( 2827): Ignoring protectedNetwork 14
+E/ConnectivityService( 2827): Ignoring protectedNetwork 15
+E/MultiDisplay( 2827): Fail to create MDS Observer
+E/AwareService( 2827): Failure starting AwareService
+E/AwareService( 2827): java.lang.reflect.InvocationTargetException
+E/AwareService( 2827): 	at java.lang.reflect.Method.invoke(Native Method)
+E/AwareService( 2827): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/AwareService( 2827): 	at com.intel.aware.awareservice.AwareService.main(AwareService.java:89)
+E/AwareService( 2827): 	at java.lang.reflect.Method.invoke(Native Method)
+E/AwareService( 2827): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/AwareService( 2827): 	at com.android.server.SystemServer.registerService(SystemServer.java:1291)
+E/AwareService( 2827): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:1006)
+E/AwareService( 2827): 	at com.android.server.SystemServer.run(SystemServer.java:274)
+E/AwareService( 2827): 	at com.android.server.SystemServer.main(SystemServer.java:186)
+E/AwareService( 2827): 	at java.lang.reflect.Method.invoke(Native Method)
+E/AwareService( 2827): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/AwareService( 2827): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+E/AwareService( 2827): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:707)
+E/AwareService( 2827): Caused by: java.lang.SecurityException
+E/AwareService( 2827): 	at android.os.BinderProxy.transactNative(Native Method)
+E/AwareService( 2827): 	at android.os.BinderProxy.transact(Binder.java:496)
+E/AwareService( 2827): 	at android.os.ServiceManagerProxy.addService(ServiceManagerNative.java:150)
+E/AwareService( 2827): 	at android.os.ServiceManager.addService(ServiceManager.java:72)
+E/AwareService( 2827): 	... 13 more
+E/WifiCsmClient( 2827): putModem: Unbalanced call
+E/WifiService( 2827): Invoking mWifiStateMachine.setWifiEnabled
+E/SecSpaceManagerService( 2827): Disable graphite package : [ com.securespaces.android.ssm.service] failed , package not install
+E/SecSpaceManagerService( 2827): android.content.pm.PackageManager$NameNotFoundException: com.securespaces.android.ssm.service
+E/SecSpaceManagerService( 2827): 	at android.app.ApplicationPackageManager.getApplicationInfo(ApplicationPackageManager.java:281)
+E/SecSpaceManagerService( 2827): 	at com.miui.server.SecSpaceManagerService.disableGraphiteApps(SecSpaceManagerService.java:47)
+E/SecSpaceManagerService( 2827): 	at com.miui.server.SecSpaceManagerService.init(SecSpaceManagerService.java:22)
+E/SecSpaceManagerService( 2827): 	at com.android.server.pm.PackageManagerServiceInjector.beforeSystemReady(PackageManagerServiceInjector.java:918)
+E/SecSpaceManagerService( 2827): 	at com.android.server.pm.PackageManagerService.systemReady(PackageManagerService.java:13405)
+E/SecSpaceManagerService( 2827): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:1105)
+E/SecSpaceManagerService( 2827): 	at com.android.server.SystemServer.run(SystemServer.java:274)
+E/SecSpaceManagerService( 2827): 	at com.android.server.SystemServer.main(SystemServer.java:186)
+E/SecSpaceManagerService( 2827): 	at java.lang.reflect.Method.invoke(Native Method)
+E/SecSpaceManagerService( 2827): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/SecSpaceManagerService( 2827): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+E/SecSpaceManagerService( 2827): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:707)
+E/SecSpaceManagerService( 2827): Disable graphite package : [ com.securespaces.android.sscm.service] failed , package not install
+E/SecSpaceManagerService( 2827): android.content.pm.PackageManager$NameNotFoundException: com.securespaces.android.sscm.service
+E/SecSpaceManagerService( 2827): 	at android.app.ApplicationPackageManager.getApplicationInfo(ApplicationPackageManager.java:281)
+E/SecSpaceManagerService( 2827): 	at com.miui.server.SecSpaceManagerService.disableGraphiteApps(SecSpaceManagerService.java:47)
+E/SecSpaceManagerService( 2827): 	at com.miui.server.SecSpaceManagerService.init(SecSpaceManagerService.java:22)
+E/SecSpaceManagerService( 2827): 	at com.android.server.pm.PackageManagerServiceInjector.beforeSystemReady(PackageManagerServiceInjector.java:918)
+E/SecSpaceManagerService( 2827): 	at com.android.server.pm.PackageManagerService.systemReady(PackageManagerService.java:13405)
+E/SecSpaceManagerService( 2827): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:1105)
+E/SecSpaceManagerService( 2827): 	at com.android.server.SystemServer.run(SystemServer.java:274)
+E/SecSpaceManagerService( 2827): 	at com.android.server.SystemServer.main(SystemServer.java:186)
+E/SecSpaceManagerService( 2827): 	at java.lang.reflect.Method.invoke(Native Method)
+E/SecSpaceManagerService( 2827): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/SecSpaceManagerService( 2827): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+E/SecSpaceManagerService( 2827): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:707)
+E/SecSpaceManagerService( 2827): Disable graphite package : [ com.securespaces.android.agent] failed , package not install
+E/SecSpaceManagerService( 2827): android.content.pm.PackageManager$NameNotFoundException: com.securespaces.android.agent
+E/SecSpaceManagerService( 2827): 	at android.app.ApplicationPackageManager.getApplicationInfo(ApplicationPackageManager.java:281)
+E/SecSpaceManagerService( 2827): 	at com.miui.server.SecSpaceManagerService.disableGraphiteApps(SecSpaceManagerService.java:47)
+E/SecSpaceManagerService( 2827): 	at com.miui.server.SecSpaceManagerService.init(SecSpaceManagerService.java:22)
+E/SecSpaceManagerService( 2827): 	at com.android.server.pm.PackageManagerServiceInjector.beforeSystemReady(PackageManagerServiceInjector.java:918)
+E/SecSpaceManagerService( 2827): 	at com.android.server.pm.PackageManagerService.systemReady(PackageManagerService.java:13405)
+E/SecSpaceManagerService( 2827): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:1105)
+E/SecSpaceManagerService( 2827): 	at com.android.server.SystemServer.run(SystemServer.java:274)
+E/SecSpaceManagerService( 2827): 	at com.android.server.SystemServer.main(SystemServer.java:186)
+E/SecSpaceManagerService( 2827): 	at java.lang.reflect.Method.invoke(Native Method)
+E/SecSpaceManagerService( 2827): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/SecSpaceManagerService( 2827): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+E/SecSpaceManagerService( 2827): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:707)
+E/SecSpaceManagerService( 2827): Disable graphite package : [ com.securespaces.android.settings] failed , package not install
+E/SecSpaceManagerService( 2827): android.content.pm.PackageManager$NameNotFoundException: com.securespaces.android.settings
+E/SecSpaceManagerService( 2827): 	at android.app.ApplicationPackageManager.getApplicationInfo(ApplicationPackageManager.java:281)
+E/SecSpaceManagerService( 2827): 	at com.miui.server.SecSpaceManagerService.disableGraphiteApps(SecSpaceManagerService.java:47)
+E/SecSpaceManagerService( 2827): 	at com.miui.server.SecSpaceManagerService.init(SecSpaceManagerService.java:22)
+E/SecSpaceManagerService( 2827): 	at com.android.server.pm.PackageManagerServiceInjector.beforeSystemReady(PackageManagerServiceInjector.java:918)
+E/SecSpaceManagerService( 2827): 	at com.android.server.pm.PackageManagerService.systemReady(PackageManagerService.java:13405)
+E/SecSpaceManagerService( 2827): 	at com.android.server.SystemServer.startOtherServices(SystemServer.java:1105)
+E/SecSpaceManagerService( 2827): 	at com.android.server.SystemServer.run(SystemServer.java:274)
+E/SecSpaceManagerService( 2827): 	at com.android.server.SystemServer.main(SystemServer.java:186)
+E/SecSpaceManagerService( 2827): 	at java.lang.reflect.Method.invoke(Native Method)
+E/SecSpaceManagerService( 2827): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/SecSpaceManagerService( 2827): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+E/SecSpaceManagerService( 2827): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:707)
+E/InputMethodManagerService( 2827): Ignoring setImeWindowStatus due to an invalid token. uid:1000 token:null
+E/LocationManagerService( 2827): FLP HAL not supported
+E/LocationManagerService( 2827): Unable to bind FLP Geofence proxy.
+E/LocationManagerService( 2827): Hardware Activity-Recognition not supported.
+E/ActivityThread( 2924): Failed to find provider info for com.miui.networkassistant.provider
+E/WifiP2pService( 2827): Unable to change interface settings: java.lang.IllegalStateException: command '24 interface setcfg p2p0 0.0.0.0 0 up' failed with '400 24 Failed to set address (No such device)'
+E/ConnectivityService( 2827): Failed to find Messenger in unregisterNetworkFactory
+E/ActivityThread( 3353): Failed to find provider info for com.xiaomi.mihomemanager.whitelistProvider
+E/ActivityManager( 2827): Unable to mark boot complete for abi: armeabi-v7a
+E/ActivityManager( 2827): Unable to mark boot complete for abi: arm64-v8a
+--------- beginning of main
+E/wifi_gbk2utf( 2827): g_pItemList is NULL
+E/wifi_gbk2utf( 2827): g_pItemList is NULL
+E/wifi_gbk2utf( 2827): g_pItemList is NULL
+E/wifi_gbk2utf( 2827): g_pItemList is NULL
+E/WifiConfigStore( 2827): will read network variables netId=0
+E/WifiStateMachine( 2827): CMD_AUTO_CONNECT did save config ->  nid=0
+E/wifi_gbk2utf( 2827): g_pItemList is NULL
+E/WifiConfigStore( 2827): will read network variables netId=0
+E/wpa_supplicant( 3044): l2_packet_send enter, 0x7f6e47420700
+E/wpa_supplicant( 3044): sendto ..., 13
+E/wpa_supplicant( 3044): l2_packet_send success: 121
+E/wpa_supplicant( 3044): l2_packet_send enter, 0x7f6e47420700
+E/wpa_supplicant( 3044): sendto ..., 13
+E/wpa_supplicant( 3044): l2_packet_send success: 99
+E/WifiConfigStore( 2827): saveWifiConfigBSSID Setting BSSID for "Hero-fx-office"-WPA_PSK to any
+E/wifi_gbk2utf( 2827): g_pItemList is NULL
+E/WifiConfigStore( 2827): saveWifiConfigBSSID Setting BSSID for "Hero-fx-office"-WPA_PSK to any
+E/wifi_gbk2utf( 2827): g_pItemList is NULL
+E/WifiStateMachine( 2827): Start Dhcp Watchdog 1
+E/native  ( 2827): do suspend false
+E/WifiStateMachine( 2827): scanCount==0 - aborting
+E/dhcpcd  ( 4347): fopen `/system/etc/dhcpcd/dhcpcd.conf': No such file or directory
+E/dhcpcd  ( 4347): fopen `/system/etc/dhcpcd/dhcpcd.conf': No such file or directory
+E/dhcpcd  ( 4347): get_duid: Read-only file system
+E/SQLiteLog( 2924): (283) recovered 68 frames from WAL file /data/data/com.android.providers.media/databases/internal.db-wal
+E/WifiStateMachine( 2827): Did not find remoteAddress {10.0.9.254} in /proc/net/arp
+E/WifiStateMachine( 2827): WifiStateMachine CMD_START_SCAN source 10020 txSuccessRate=0.62 rxSuccessRate=0.00 targetRoamBSSID=94:b4:0f:a2:c7:f0 RSSI=-53
+E/ConnectivityService( 2827): Unexpected mtu value: 0, wlan0
+E/AdaptiveAuthentication( 2827): !!!!!!![AdaptiveAuthenticationHandler.doSafeZoneCalculation]: parameter miss!!!!!!!!
+E/PhoneInterfaceManager( 3294): [PhoneIntfMgr] getDataEnabled: no phone subId=-1 retVal=false
+E/GpsLocationProvider( 2827): No APN found to select.
+E/MiHomeManager( 3045): Exception when retrieving package:com.xiaomi.mihomemanager
+E/MiHomeManager( 3045): android.content.pm.PackageManager$NameNotFoundException: com.xiaomi.mihomemanager
+E/MiHomeManager( 3045): 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:114)
+E/MiHomeManager( 3045): 	at com.android.settings.b.a.<init>(MiHomeManager.java:38)
+E/MiHomeManager( 3045): 	at com.android.settings.b.a.bg(MiHomeManager.java:50)
+E/MiHomeManager( 3045): 	at com.android.settings.BasePreferenceFragment.onViewCreated(BasePreferenceFragment.java:73)
+E/MiHomeManager( 3045): 	at com.android.settings.SettingsFragment.onViewCreated(SettingsFragment.java:177)
+E/MiHomeManager( 3045): 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:908)
+E/MiHomeManager( 3045): 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1067)
+E/MiHomeManager( 3045): 	at android.app.BackStackRecord.run(BackStackRecord.java:840)
+E/MiHomeManager( 3045): 	at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1454)
+E/MiHomeManager( 3045): 	at android.app.Activity.performStart(Activity.java:6011)
+E/MiHomeManager( 3045): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2293)
+E/MiHomeManager( 3045): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2392)
+E/MiHomeManager( 3045): 	at android.app.ActivityThread.access$800(ActivityThread.java:154)
+E/MiHomeManager( 3045): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1306)
+E/MiHomeManager( 3045): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+E/MiHomeManager( 3045): 	at android.os.Looper.loop(Looper.java:135)
+E/MiHomeManager( 3045): 	at android.app.ActivityThread.main(ActivityThread.java:5275)
+E/MiHomeManager( 3045): 	at java.lang.reflect.Method.invoke(Native Method)
+E/MiHomeManager( 3045): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/MiHomeManager( 3045): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+E/MiHomeManager( 3045): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:707)
+E/WifiConfigStore( 2827):  rewrite network history for "Hero-fx-office"-WPA_PSK
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/SELinux ( 2286): avc:  denied  { add } for service=media.widi.uibc scontext=u:r:system_app:s0 tcontext=u:object_r:default_android_service:s0 tclass=service_manager
+E/ServiceManager( 2286): add_service('media.widi.uibc',77) uid=1000 - PERMISSION DENIED
+E/widi-uibc-jni( 4578): jboolean startListening(JNIEnv*, jobject, jobject): Could not register media.widi.uibc with service manager, error = -1
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/MiCloudResolver( 4501): loadResumeTime: error cursor is null or query fail
+E/WifiStateMachine( 2827): WifiStateMachine CMD_START_SCAN source -2 txSuccessRate=11.45 rxSuccessRate=9.00 targetRoamBSSID=94:b4:0f:a2:c7:f0 RSSI=-50
+E/WifiStateMachine( 2827): WifiStateMachine L2Connected CMD_START_SCAN source -2 3, 4 -> obsolete
+E/SQLiteLog( 4271): (284) automatic index on view_events(_id)
+E/com.miui.activityutil.i( 3614): isAllowNetworking
+E/com.miui.activityutil.i( 3614): android.content.pm.PackageManager$NameNotFoundException: com.miui.securitycenter
+E/com.miui.activityutil.i( 3614): 	at android.app.ApplicationPackageManager.getApplicationInfo(ApplicationPackageManager.java:281)
+E/com.miui.activityutil.i( 3614): 	at com.miui.activityutil.i.f(SourceFile:265)
+E/com.miui.activityutil.i( 3614): 	at com.miui.activityutil.i.a(SourceFile:257)
+E/com.miui.activityutil.i( 3614): 	at com.miui.activityutil.p.run(SourceFile:280)
+E/com.miui.activityutil.i( 3614): 	at android.os.Handler.handleCallback(Handler.java:739)
+E/com.miui.activityutil.i( 3614): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+E/com.miui.activityutil.i( 3614): 	at android.os.Looper.loop(Looper.java:135)
+E/com.miui.activityutil.i( 3614): 	at android.app.ActivityThread.main(ActivityThread.java:5275)
+E/com.miui.activityutil.i( 3614): 	at java.lang.reflect.Method.invoke(Native Method)
+E/com.miui.activityutil.i( 3614): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/com.miui.activityutil.i( 3614): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+E/com.miui.activityutil.i( 3614): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:707)
+E/MicloudPushService( 4501): inserted micloud.browser.bookmark.sync
+E/MicloudPushService( 4501): inserted micloud.browser.history.sync
+E/MicloudPushService( 4501): inserted micloud.browser.tab.sync
+E/MicloudPushService( 4501): inserted micloud.browser.novel.sync
+E/MicloudPushService( 4501): inserted micloud.kit.bup.up.sync
+E/MicloudPushService( 4501): inserted micloud.wifi.sync
+E/MicloudPushService( 4501): inserted micloud.contact.sync
+E/MicloudPushService( 4501): inserted micloud.note.sync
+E/MicloudPushService( 4501): inserted micloud.kit.calendar.default.sync
+E/ActivityThread( 3614): Failed to find provider info for com.miui.securitycenter.provider
+E/ActivityThread( 3614): Failed to find provider info for com.miui.securitycenter.provider
+E/MicloudPushService( 4501): inserted micloud.browser.bookmark.sync
+E/MicloudPushService( 4501): inserted micloud.browser.history.sync
+E/MicloudPushService( 4501): inserted micloud.browser.tab.sync
+E/MicloudPushService( 4501): inserted micloud.browser.novel.sync
+E/MicloudPushService( 4501): inserted micloud.kit.bup.up.sync
+E/MicloudPushService( 4501): inserted micloud.wifi.sync
+E/MicloudPushService( 4501): inserted micloud.contact.sync
+E/MicloudPushService( 4501): inserted micloud.note.sync
+E/MicloudPushService( 4501): inserted micloud.kit.calendar.default.sync
+E/com.miui.activityutil.i( 3614): isAllowNetworking
+E/com.miui.activityutil.i( 3614): android.content.pm.PackageManager$NameNotFoundException: com.miui.securitycenter
+E/com.miui.activityutil.i( 3614): 	at android.app.ApplicationPackageManager.getApplicationInfo(ApplicationPackageManager.java:281)
+E/com.miui.activityutil.i( 3614): 	at com.miui.activityutil.i.f(SourceFile:265)
+E/com.miui.activityutil.i( 3614): 	at com.miui.activityutil.i.a(SourceFile:257)
+E/com.miui.activityutil.i( 3614): 	at com.miui.activityutil.p.run(SourceFile:280)
+E/com.miui.activityutil.i( 3614): 	at android.os.Handler.handleCallback(Handler.java:739)
+E/com.miui.activityutil.i( 3614): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+E/com.miui.activityutil.i( 3614): 	at android.os.Looper.loop(Looper.java:135)
+E/com.miui.activityutil.i( 3614): 	at android.app.ActivityThread.main(ActivityThread.java:5275)
+E/com.miui.activityutil.i( 3614): 	at java.lang.reflect.Method.invoke(Native Method)
+E/com.miui.activityutil.i( 3614): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/com.miui.activityutil.i( 3614): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+E/com.miui.activityutil.i( 3614): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:707)
+E/com.miui.activityutil.i( 3614): isAllowNetworking
+E/com.miui.activityutil.i( 3614): android.content.pm.PackageManager$NameNotFoundException: com.miui.securitycenter
+E/com.miui.activityutil.i( 3614): 	at android.app.ApplicationPackageManager.getApplicationInfo(ApplicationPackageManager.java:281)
+E/com.miui.activityutil.i( 3614): 	at com.miui.activityutil.i.f(SourceFile:265)
+E/com.miui.activityutil.i( 3614): 	at com.miui.activityutil.i.a(SourceFile:257)
+E/com.miui.activityutil.i( 3614): 	at com.miui.activityutil.p.run(SourceFile:280)
+E/com.miui.activityutil.i( 3614): 	at android.os.Handler.handleCallback(Handler.java:739)
+E/com.miui.activityutil.i( 3614): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+E/com.miui.activityutil.i( 3614): 	at android.os.Looper.loop(Looper.java:135)
+E/com.miui.activityutil.i( 3614): 	at android.app.ActivityThread.main(ActivityThread.java:5275)
+E/com.miui.activityutil.i( 3614): 	at java.lang.reflect.Method.invoke(Native Method)
+E/com.miui.activityutil.i( 3614): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/com.miui.activityutil.i( 3614): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+E/com.miui.activityutil.i( 3614): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:707)
+E/Metok_Tag( 3099): < metoknlp_app > update failed, not this time
+E/WifiStateMachine( 2827): WifiStateMachine CMD_START_SCAN source -2 txSuccessRate=5.95 rxSuccessRate=5.53 targetRoamBSSID=94:b4:0f:a2:c7:f0 RSSI=-56
+E/frameLib.ErrorUtils( 4756): =>printExceptionInfo
+E/frameLib.ErrorUtils( 4756): java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/cn.emagroup.kom-1/base.apk"],nativeLibraryDirectories=[/data/app/cn.emagroup.kom-1/lib/x86_64, /vendor/lib64, /system/lib64]]] couldn't find "libfmod.so"
+E/frameLib.ErrorUtils( 4756): 	at java.lang.Runtime.loadLibrary(Runtime.java:435)
+E/frameLib.ErrorUtils( 4756): 	at java.lang.System.loadLibrary(System.java:988)
+E/frameLib.ErrorUtils( 4756): 	at org.cocos2dx.lib.Cocos2dxActivity.<clinit>(Cocos2dxActivity.java:74)
+E/frameLib.ErrorUtils( 4756): 	at java.lang.reflect.Constructor.newInstance(Native Method)
+E/frameLib.ErrorUtils( 4756): 	at java.lang.Class.newInstance(Class.java:1603)
+E/frameLib.ErrorUtils( 4756): 	at android.app.Instrumentation.newActivity(Instrumentation.java:1066)
+E/frameLib.ErrorUtils( 4756): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2231)
+E/frameLib.ErrorUtils( 4756): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2392)
+E/frameLib.ErrorUtils( 4756): 	at android.app.ActivityThread.access$800(ActivityThread.java:154)
+E/frameLib.ErrorUtils( 4756): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1306)
+E/frameLib.ErrorUtils( 4756): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+E/frameLib.ErrorUtils( 4756): 	at android.os.Looper.loop(Looper.java:135)
+E/frameLib.ErrorUtils( 4756): 	at android.app.ActivityThread.main(ActivityThread.java:5275)
+E/frameLib.ErrorUtils( 4756): 	at java.lang.reflect.Method.invoke(Native Method)
+E/frameLib.ErrorUtils( 4756): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/frameLib.ErrorUtils( 4756): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+E/frameLib.ErrorUtils( 4756): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:707)
+E/frameLib.ErrorUtils( 4756): <=printExceptionInfo
+--------- beginning of crash
+E/AndroidRuntime( 4756): FATAL EXCEPTION: main
+E/AndroidRuntime( 4756): Process: cn.emagroup.kom, PID: 4756
+E/AndroidRuntime( 4756): java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/cn.emagroup.kom-1/base.apk"],nativeLibraryDirectories=[/data/app/cn.emagroup.kom-1/lib/x86_64, /vendor/lib64, /system/lib64]]] couldn't find "libfmod.so"
+E/AndroidRuntime( 4756): 	at java.lang.Runtime.loadLibrary(Runtime.java:435)
+E/AndroidRuntime( 4756): 	at java.lang.System.loadLibrary(System.java:988)
+E/AndroidRuntime( 4756): 	at org.cocos2dx.lib.Cocos2dxActivity.<clinit>(Cocos2dxActivity.java:74)
+E/AndroidRuntime( 4756): 	at java.lang.reflect.Constructor.newInstance(Native Method)
+E/AndroidRuntime( 4756): 	at java.lang.Class.newInstance(Class.java:1603)
+E/AndroidRuntime( 4756): 	at android.app.Instrumentation.newActivity(Instrumentation.java:1066)
+E/AndroidRuntime( 4756): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2231)
+E/AndroidRuntime( 4756): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2392)
+E/AndroidRuntime( 4756): 	at android.app.ActivityThread.access$800(ActivityThread.java:154)
+E/AndroidRuntime( 4756): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1306)
+E/AndroidRuntime( 4756): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 4756): 	at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime( 4756): 	at android.app.ActivityThread.main(ActivityThread.java:5275)
+E/AndroidRuntime( 4756): 	at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime( 4756): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime( 4756): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+E/AndroidRuntime( 4756): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:707)
+E/BufferQueueProducer( 2288): [Starting cn.emagroup.kom] dequeueBuffer: BufferQueue has been abandoned
+E/Surface ( 2827): dequeueBuffer failed (No such device)
+E/ViewRootImpl( 2827): Could not lock surface
+E/ViewRootImpl( 2827): java.lang.IllegalArgumentException
+E/ViewRootImpl( 2827): 	at android.view.Surface.nativeLockCanvas(Native Method)
+E/ViewRootImpl( 2827): 	at android.view.Surface.lockCanvas(Surface.java:264)
+E/ViewRootImpl( 2827): 	at android.view.ViewRootImpl.drawSoftware(ViewRootImpl.java:2610)
+E/ViewRootImpl( 2827): 	at android.view.ViewRootImpl.draw(ViewRootImpl.java:2584)
+E/ViewRootImpl( 2827): 	at android.view.ViewRootImpl.performDraw(ViewRootImpl.java:2376)
+E/ViewRootImpl( 2827): 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2006)
+E/ViewRootImpl( 2827): 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1084)
+E/ViewRootImpl( 2827): 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:5931)
+E/ViewRootImpl( 2827): 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:788)
+E/ViewRootImpl( 2827): 	at android.view.Choreographer.doCallbacks(Choreographer.java:601)
+E/ViewRootImpl( 2827): 	at android.view.Choreographer.doFrame(Choreographer.java:571)
+E/ViewRootImpl( 2827): 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:774)
+E/ViewRootImpl( 2827): 	at android.os.Handler.handleCallback(Handler.java:739)
+E/ViewRootImpl( 2827): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+E/ViewRootImpl( 2827): 	at android.os.Looper.loop(Looper.java:135)
+E/ViewRootImpl( 2827): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+E/ViewRootImpl( 2827): 	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+E/PhoneInterfaceManager( 3294): [PhoneIntfMgr] getDataEnabled: no phone subId=-1 retVal=false
+E/PhoneInterfaceManager( 3294): [PhoneIntfMgr] getDataEnabled: no phone subId=-1 retVal=false
+E/PhoneInterfaceManager( 3294): [PhoneIntfMgr] getDataEnabled: no phone subId=-1 retVal=false
+E/        ( 4815): Cannot create code cache directory ./code_cache: Read-only file system.
+E/RemoteController( 2969): Cannot set synchronization mode on an unregistered RemoteController
+E/HAL     ( 4815): load: module=/system/lib64/hw/memtrack.default.so
+E/HAL     ( 4815): dlopen failed: library "/system/lib64/hw/memtrack.default.so" not found
+E/memtrack( 4815): Couldn't load memtrack module (Invalid argument)
+E/android.os.Debug( 4815): failed to load memtrack module: -22
+E/CRASHLOG( 2449): CRASH   07c70f15e1e33d64d57e  2018-01-22/17:14:40  JAVACRASH /data/logs/crashlog0
+E/frameLib.ErrorUtils( 4848): =>printExceptionInfo
+E/frameLib.ErrorUtils( 4848): java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/cn.emagroup.kom-1/base.apk"],nativeLibraryDirectories=[/data/app/cn.emagroup.kom-1/lib/x86_64, /vendor/lib64, /system/lib64]]] couldn't find "libfmod.so"
+E/frameLib.ErrorUtils( 4848): 	at java.lang.Runtime.loadLibrary(Runtime.java:435)
+E/frameLib.ErrorUtils( 4848): 	at java.lang.System.loadLibrary(System.java:988)
+E/frameLib.ErrorUtils( 4848): 	at org.cocos2dx.lib.Cocos2dxActivity.<clinit>(Cocos2dxActivity.java:74)
+E/frameLib.ErrorUtils( 4848): 	at java.lang.reflect.Constructor.newInstance(Native Method)
+E/frameLib.ErrorUtils( 4848): 	at java.lang.Class.newInstance(Class.java:1603)
+E/frameLib.ErrorUtils( 4848): 	at android.app.Instrumentation.newActivity(Instrumentation.java:1066)
+E/frameLib.ErrorUtils( 4848): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2231)
+E/frameLib.ErrorUtils( 4848): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2392)
+E/frameLib.ErrorUtils( 4848): 	at android.app.ActivityThread.access$800(ActivityThread.java:154)
+E/frameLib.ErrorUtils( 4848): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1306)
+E/frameLib.ErrorUtils( 4848): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+E/frameLib.ErrorUtils( 4848): 	at android.os.Looper.loop(Looper.java:135)
+E/frameLib.ErrorUtils( 4848): 	at android.app.ActivityThread.main(ActivityThread.java:5275)
+E/frameLib.ErrorUtils( 4848): 	at java.lang.reflect.Method.invoke(Native Method)
+E/frameLib.ErrorUtils( 4848): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/frameLib.ErrorUtils( 4848): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+E/frameLib.ErrorUtils( 4848): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:707)
+E/frameLib.ErrorUtils( 4848): <=printExceptionInfo
+E/AndroidRuntime( 4848): FATAL EXCEPTION: main
+E/AndroidRuntime( 4848): Process: cn.emagroup.kom, PID: 4848
+E/AndroidRuntime( 4848): java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/cn.emagroup.kom-1/base.apk"],nativeLibraryDirectories=[/data/app/cn.emagroup.kom-1/lib/x86_64, /vendor/lib64, /system/lib64]]] couldn't find "libfmod.so"
+E/AndroidRuntime( 4848): 	at java.lang.Runtime.loadLibrary(Runtime.java:435)
+E/AndroidRuntime( 4848): 	at java.lang.System.loadLibrary(System.java:988)
+E/AndroidRuntime( 4848): 	at org.cocos2dx.lib.Cocos2dxActivity.<clinit>(Cocos2dxActivity.java:74)
+E/AndroidRuntime( 4848): 	at java.lang.reflect.Constructor.newInstance(Native Method)
+E/AndroidRuntime( 4848): 	at java.lang.Class.newInstance(Class.java:1603)
+E/AndroidRuntime( 4848): 	at android.app.Instrumentation.newActivity(Instrumentation.java:1066)
+E/AndroidRuntime( 4848): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2231)
+E/AndroidRuntime( 4848): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2392)
+E/AndroidRuntime( 4848): 	at android.app.ActivityThread.access$800(ActivityThread.java:154)
+E/AndroidRuntime( 4848): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1306)
+E/AndroidRuntime( 4848): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 4848): 	at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime( 4848): 	at android.app.ActivityThread.main(ActivityThread.java:5275)
+E/AndroidRuntime( 4848): 	at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime( 4848): 	at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime( 4848): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+E/AndroidRuntime( 4848): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:707)
+E/frameLib.ErrorUtils( 4848): =>printExceptionInfo
+E/frameLib.ErrorUtils( 4848): java.lang.ArithmeticException: divide by zero
+E/frameLib.ErrorUtils( 4848): 	at com.herosdk.a.v.a(Unknown Source)
+E/frameLib.ErrorUtils( 4848): 	at com.herosdk.a.v.b(Unknown Source)
+E/frameLib.ErrorUtils( 4848): 	at com.herosdk.a.h.run(Unknown Source)
+E/frameLib.ErrorUtils( 4848): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+E/frameLib.ErrorUtils( 4848): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+E/frameLib.ErrorUtils( 4848): 	at java.lang.Thread.run(Thread.java:818)
+E/frameLib.ErrorUtils( 4848): <=printExceptionInfo
+E/CRASHLOG( 2449): CRASH   b3d6e39fbdda1c52f5a8  2018-01-22/17:14:42  JAVACRASH /data/logs/crashlog1
+E/WindowState( 2827): getStack: Window{fa3e749 u0 Starting cn.emagroup.kom} couldn't find taskId=219 Callers=com.android.server.wm.WindowState.getDisplayContent:814 com.android.server.wm.WindowState.getWindowList:1386 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2797 com.android.server.wm.WindowManagerService.removeWindowLocked:2698 
+E/WindowState( 2827): getStack: Window{fa3e749 u0 Starting cn.emagroup.kom} couldn't find taskId=219 Callers=com.android.server.wm.WindowState.getDisplayContent:814 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2802 com.android.server.wm.WindowManagerService.removeWindowLocked:2698 com.android.server.wm.WindowManagerService.removeWindow:2620 
+E/WifiStateMachine( 2827): WifiStateMachine CMD_START_SCAN source -2 txSuccessRate=0.07 rxSuccessRate=0.07 targetRoamBSSID=94:b4:0f:a2:c7:f0 RSSI=-52
+E/PowerHAL( 2827): APP LAUNCH SAFETY TIMER TRIGGERED!
